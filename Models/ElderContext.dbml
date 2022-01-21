@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ElderDB" Class="ElderContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-IGIOI52;Initial Catalog=ElderDB;Integrated Security=True;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ElderDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Elder" Member="Elders">
+    <Type Name="Elder">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Birth" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Seniority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
